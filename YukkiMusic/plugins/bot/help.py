@@ -82,7 +82,7 @@ def paginate_modules(page_n, module_dict, prefix, chat=None, close: bool = False
                 ),
                 EqInlineKeyboardButton(
                     "close" if close else "Back",
-                    callback_data="close" if close else "settingsback_helper",
+                    callback_data="close" if close else "start_callback",
                 ),
                 EqInlineKeyboardButton(
                     "❯",
@@ -95,7 +95,7 @@ def paginate_modules(page_n, module_dict, prefix, chat=None, close: bool = False
             [
                 EqInlineKeyboardButton(
                     "close" if close else "Back",
-                    callback_data="close" if close else "settingsback_helper",
+                    callback_data="close" if close else "start_callback",
                 ),
             ]
         )
